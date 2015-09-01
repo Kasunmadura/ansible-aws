@@ -4,7 +4,7 @@
   connection: local
   gather_facts: False
 
-  var_files:
+  vars_files:
     - var/dev-environment.yml
     - var/aws-creds.yml
 
