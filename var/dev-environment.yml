@@ -43,12 +43,12 @@ ec2_instances:
     count_tag: 
         Name: dev_jumphost
 
-#  - instance_type: m1.small
-#    image: "{{ image_id }}"
-#    keypair: "{{instances_keypair}}"
-#    group: ['web', 'ssh'] 
-#    instance_tags: 
-#        Name: web
-#    exact_count: 1 
-#    count_tag: 
-#        Name: web
+  - instance_type: m1.small
+    image: "{{ image_id }}"
+    keypair: "{{instances_keypair}}"
+    group: ['web', 'ssh'] 
+    instance_tags: 
+        Name: web
+    exact_count: 1 
+    count_tag: 
+        Name: web
